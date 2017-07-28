@@ -1426,7 +1426,7 @@ end
               }
               edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈صفحه دوم 2 ️⃣`\n@Sphero_Ch',keyboard)
             endSphero_ChSphero_Ch
-            else Canswer(q.id,'⚠️Your Not Admin⚠️\n @Sphero_Ch',true)
+            else Canswer(q.id,'⚠️Your Not Admin⚠️',true)
 						end
 						end
           if msg.message and msg.message.date > (os.time() - 5) and msg.message.text then
