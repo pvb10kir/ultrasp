@@ -1208,7 +1208,7 @@ elseif value == 'muteall' then
                    {text = '🔙 برگشت به منوی اصلی💠', callback_data = 'firstmenu:'..chat},{text = '2️⃣صفحه دوم ➡️', callback_data = 'next_page:'..chat}
                 }
               }
-            edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈صفحه اول 1️⃣`\n@Sphero_Ch',keyboard)
+            edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈صفحه اول 1️⃣`',keyboard)
             end
 			------------------------------------------------------------------------
             if q.data:match('left_page') then
@@ -1301,7 +1301,7 @@ end
                    {text = '🔙 برگشت به منوی اصلی💠', callback_data = 'firstmenu:'..chat},{text = '2️⃣صفحه دوم ➡️', callback_data = 'next_page:'..chat}
                 }
               }
-            edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈 برگشتیم به صفحه اول 1 ️⃣`\n@Sphero_Ch',keyboard)
+            edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈 برگشتیم به صفحه اول 1 ️⃣`\n',keyboard)
             end
 						if q.data:match('next_page') then
 							local chat = '-'..q.data:match('(%d+)$')
@@ -1424,7 +1424,7 @@ end
                   {text = '🔙برگشت به صفحه اول1️⃣', callback_data = 'left_page:'..chat},{text = '🌀برگشت به منوی اصلی🔙', callback_data = 'firstmenu:'..chat}
                 }
               }
-              edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈صفحه دوم 2 ️⃣`\n@Sphero_Ch',keyboard)
+              edit(q.inline_message_id,'_⚙️ تنظیمات ⚙️_\n`👈صفحه دوم 2 ️⃣`',keyboard)
             end
             else Canswer(q.id,'⚠️Your Not Admin⚠️ @Sphero_Ch',true)
 						end
