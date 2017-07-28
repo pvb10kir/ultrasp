@@ -1,12 +1,12 @@
-﻿bot = dofile('/home/cliusp/inline/utils.lua')
-json = dofile('/home/cliusp/inline/JSON.lua')
+﻿bot = dofile('/home/cliusp/ultrasp/utils.lua')
+json = dofile('/home/cliusp/ultrasp/JSON.lua')
 URL = require "socket.url"
 serpent = require("serpent")
 http = require "socket.http"
 https = require "ssl.https"
 redis = require('redis')
 db = redis.connect('127.0.0.1', 6379)
-BASE = '/home/cliusp/inline/'
+BASE = '/home/cliusp/ultrasp/'
 SUDO = 255317894 -- sudo id
 sudo_users = {255317894,Userid}
 BOTS = 404973473 -- bot id
