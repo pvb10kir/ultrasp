@@ -1,15 +1,15 @@
-﻿bot = dofile('/home/USERNAME/inline/utils.lua')
-json = dofile('/home/USERNAME/inline/JSON.lua')
+﻿bot = dofile('/home/cliusp/inline/utils.lua')
+json = dofile('/home/cliusp/inline/JSON.lua')
 URL = require "socket.url"
 serpent = require("serpent")
 http = require "socket.http"
 https = require "ssl.https"
 redis = require('redis')
 db = redis.connect('127.0.0.1', 6379)
-BASE = '/home/USERNAME/inline/'
-SUDO = 261764158 -- sudo id
-sudo_users = {261764158,Userid}
-BOTS = 249464384 -- bot id
+BASE = '/home/cliusp/inline/'
+SUDO = 255317894 -- sudo id
+sudo_users = {255317894,Userid}
+BOTS = 404973473 -- bot id
 bot_id = db:get(SUDO..'bot_id')
 db:set(SUDO..'bot_on',"on")
 function vardump(value)
@@ -58,7 +58,7 @@ end
 end
 ------------------------------------------------------------
 function is_bot(msg)
-  if tonumber(BOTS) == 330376543 then
+  if tonumber(BOTS) == 404973473 then
     return true
     else
     return false
@@ -1311,7 +1311,7 @@ end
             end
           tdcli_function({
       ID = "GetInlineQueryResults",
-      bot_user_id_ = 386343615,
+      bot_user_id_ = 397616185,
       chat_id_ = msg.chat_id_,
       user_location_ = {
         ID = "Location",
